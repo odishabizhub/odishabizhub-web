@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #f7f9fc;
+  color: #0f1b2b;
+}
+
+::selection {
+  background-color: #bfdbfe;
+  color: #0f1b2b;
+}
+
+.prose-note {
+  @apply rounded-md border border-amber-300 bg-amber-50 px-4 py-3 text-sm text-amber-900;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
