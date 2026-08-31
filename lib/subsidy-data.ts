@@ -367,6 +367,126 @@ export const SECTORS: SectorInfo[] = [
       "Standard MSME Policy 2022 route — 25% general / 30% reserved-category Capital Investment Subsidy, plus the usual top-ups for backward district, IDCO estate or environmental measures.",
     negativeListPosition:
       "Certain heads are excluded — iron/steel coiling and de-coiling, scrap processing and integrated rolling, and standalone sponge iron are all on the negative list. Confirm the specific fabrication activity first.",
+    deepDive: {
+      intro:
+        "Engineering and fabrication is a steady-demand sector in Odisha for a specific reason: the state's anchor heavy industries need local vendors. SAIL's Rourkela Steel Plant, NALCO's Angul Aluminium Park and Tata Steel's Kalinganagar complex all run active vendor-development programmes for ancillary MSMEs — real, dated activity, not just a general \"steel hub\" claim. Nationally, engineering exports hit a record ₹10.2 lakh crore (US$122.4 billion) in FY 2025-26, now close to 28% of India's total merchandise exports, and Capital Goods manufacturing output has roughly doubled since 2015.",
+      subActivities: [
+        {
+          name: "General & light fabrication",
+          note: "Structural steel, gates, grills, industrial sheds. Dry-process units with no heat treatment, plating or painting typically sit in the lighter White pollution category.",
+        },
+        {
+          name: "Sheet metal & CNC job-work",
+          note: "Cutting, bending and punching job work. Adding an in-house powder-coating or painting line usually moves the unit into the Orange pollution category.",
+        },
+        {
+          name: "Precision machining",
+          note: "Lathe and CNC job work — machine components, turned parts. No formal NABARD/MSME-DI project profile found for this scale in Odisha; costed as indicative below.",
+        },
+        {
+          name: "Welded assemblies",
+          note: "Welding job-work and fabricated assemblies. The most capital-light entry point in this sector.",
+        },
+        {
+          name: "Auto components & ancillary units",
+          note: "DC-MSME lists several relevant project profiles (auto chain, pistons, silencers, control cables) — worth requesting directly, as their cost data wasn't independently verified for this page.",
+        },
+        {
+          name: "Steel coiling, scrap processing & rolling",
+          note: "Excluded outright — see the negative-list note above. This is a hard line, not a threshold.",
+        },
+      ],
+      licenses: [
+        {
+          name: "Factory licence (Factories Act 1948)",
+          detail:
+            "Required once a unit has 10+ workers using power, or 20+ workers without power. In Odisha this is administered by the Directorate of Factories & Boilers under the Orissa Factories Rules, 1950 — apply on Form 2, licence issued on Form 4, valid to 31 December of the grant year. Via the GO SWIFT single-window portal the stated processing target is 30 working days, and units with 50+ workers or hazardous processes need a Safety & Health Policy on file.",
+        },
+        {
+          name: "Pollution control consent (OSPCB)",
+          detail:
+            "OSPCB's 2023 classification revision draws the same line this page does: engineering/fabrication units with heat treatment, metal surface finishing or painting fall in the Orange category (Consent to Establish + Consent to Operate required); dry-process units without those steps fall in the lighter White category. This finding rests on a secondary regulatory-tracking summary of the OSPCB order, not a directly-read primary PDF — confirm your specific activity's category with OSPCB before relying on it.",
+        },
+        {
+          name: "BIS / IS standards",
+          detail:
+            "BIS product certification (e.g. IS 2062 for structural steel) generally applies to the steel producer, not the fabricator buying and welding certified steel — a plain fabrication unit typically doesn't need its own BIS licence unless it manufactures a specific BIS-scheduled product itself. Design/execution compliance with IS 800 and use of BIS-marked input steel is what public-works tenders usually check. Confirm with BIS or the specific tender authority for your product — this synthesis wasn't found stated explicitly in one authoritative source.",
+        },
+        {
+          name: "Udyam / MSME registration",
+          detail: "Free, lifetime-valid, and the basis for every subsidy and priority-sector-lending claim that follows.",
+        },
+      ],
+      machinery: [
+        {
+          activity: "General/light fabrication",
+          investmentRange: "₹25 lakh – ₹1 crore (indicative — no current Odisha-specific model found)",
+          keyMachinery: "Welding sets (arc/MIG/TIG), cutting/shearing machine, bending machine, drilling machine, bench grinder",
+        },
+        {
+          activity: "Sheet metal / CNC job-work",
+          investmentRange: "₹30 lakh – ₹1 crore+ (2018 reference prices for individual machines)",
+          keyMachinery: "CNC turret punch (~₹80L), CNC press brake (~₹12–15L), shearing & bending machines",
+        },
+        {
+          activity: "Precision machining",
+          investmentRange: "₹15 lakh – ₹60 lakh (indicative)",
+          keyMachinery: "Lathe, milling machine, drilling machine, surface grinder",
+        },
+        {
+          activity: "Welded assemblies / job-work",
+          investmentRange: "₹10 lakh – ₹40 lakh (indicative)",
+          keyMachinery: "Welding transformers, cutting sets, power hacksaw, hand tools",
+        },
+      ],
+      subsidyWorkedExample: {
+        title: "A worked example: sheet metal fabrication unit",
+        body:
+          "A ₹40 lakh plant & machinery investment — cutting, bending and welding equipment, the entry point for a small sheet-metal or structural fabrication unit — earns a Capital Investment Subsidy of ₹10 lakh at the general rate (25%) or ₹12 lakh at the reserved-category rate (30%) under the MSME Development Policy 2022, before any top-up. Units inside an IDCO industrial estate — common in this sector, given proximity to anchor industries like SAIL Rourkela or Tata Steel Kalinganagar — qualify for a further +5% location top-up, capped at ₹20 lakh. Use our eligibility checker with your own numbers for a project-specific figure.",
+      },
+      faqs: [
+        {
+          question: "Do I need a factory licence for a fabrication unit in Odisha?",
+          answer:
+            "Only once you cross 10 workers using power (or 20 without power). Below that, a factory licence from the Directorate of Factories & Boilers isn't required — though Udyam registration and other standard registrations still are.",
+        },
+        {
+          question: "What pollution category does an engineering or fabrication unit fall into?",
+          answer:
+            "It depends on your process. A dry unit — cutting, bending, welding, assembly, with no heat treatment, plating or painting — typically falls in the lighter White category. Add an in-house powder-coating or painting line and you likely move to Orange, which needs Consent to Establish before construction and Consent to Operate before running. Confirm your specific activity with OSPCB.",
+        },
+        {
+          question: "Do I need BIS certification to run a fabrication unit?",
+          answer:
+            "Usually not for the fabrication work itself — BIS product standards like IS 2062 apply to the steel producer, not the unit buying and welding that steel. What matters for tenders is usually design compliance with IS 800 and sourcing BIS-marked input material, not a BIS licence on your own unit — though this depends on exactly what you manufacture, so confirm with BIS for your specific product.",
+        },
+        {
+          question: "Is there shared infrastructure I can use instead of buying expensive CNC machinery myself?",
+          answer:
+            "Yes — the Central Tool Room and Training Centre (CTTC) in Bhubaneswar, a Ministry of MSME Technology Centre built with roughly ₹52 crore of investment, gives smaller units consultancy access to precision tooling, CNC machining and CAD/CAM design without each unit having to buy that equipment outright.",
+        },
+        {
+          question: "Why is engineering & fabrication steady-demand in Odisha specifically?",
+          answer:
+            "Because the state's anchor heavy industries actively recruit local vendors: SAIL's Rourkela Steel Plant, NALCO's Angul Aluminium Park and Tata Steel's Kalinganagar complex all run vendor-development programmes for ancillary MSME suppliers, and Kalinganagar has a dedicated Downstream Park for steel-based units with a planned ₹1,200 crore of shared infrastructure.",
+        },
+        {
+          question: "Is a scrap processing or steel rolling unit eligible for subsidy?",
+          answer:
+            "No — iron/steel coiling and de-coiling, scrap processing, integrated rolling and standalone sponge iron units are all excluded outright on Odisha's negative list, with no investment threshold that cures it. This is a different exclusion from rice or flour milling, which do have thresholds.",
+        },
+      ],
+      sources: [
+        "Directorate of Factories & Boilers, Odisha — dfb.odisha.gov.in; Invest Odisha GO SWIFT service page",
+        "OSPCB classification revision (Feb 2023), via secondary regulatory summary — confirm against OSPCB's own published list",
+        "CPCB Pollution Index classification framework",
+        "SISI Rayagada / DC-MSME project profile: Aluminium Fabrications (2003) — dated, structural reference only",
+        "Sirsa Sheet Metal Fabrication Cluster DPR, Govt of Haryana (2018) — machinery cost reference, not Odisha-specific",
+        "Central Tool Room and Training Centre (CTTC), Bhubaneswar — cttc.gov.in; PIB",
+        "EEPC India, IBEF — engineering export and Capital Goods sector statistics",
+        "Vendor-development coverage: SAIL Rourkela (Aug 2026), NALCO Angul Aluminium Park (Sep 2025), Tata Steel Kalinganagar",
+      ],
+    },
   },
   {
     slug: "cold-chain",
