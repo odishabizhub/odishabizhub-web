@@ -12,18 +12,21 @@ const METHODS = [
   {
     label: "Email",
     value: CONTACT.email,
+    href: CONTACT.email ? `mailto:${CONTACT.email}` : undefined,
     icon: "✉️",
     hint: "Best for detailed queries with documents attached.",
   },
   {
     label: "Phone",
     value: CONTACT.phone,
+    href: CONTACT.phone ? `tel:${CONTACT.phone}` : undefined,
     icon: "📞",
     hint: "Weekdays, 10am–6pm IST.",
   },
   {
     label: "WhatsApp",
     value: CONTACT.whatsapp,
+    href: CONTACT.whatsapp ? `https://wa.me/${CONTACT.whatsapp.replace(/\D/g, "")}` : undefined,
     icon: "💬",
     hint: "Fastest for a quick question.",
   },
@@ -53,7 +56,11 @@ export default function ContactPage() {
                     </span>
                     <div>
                       <p className="font-display text-sm font-semibold text-ink">{m.label}</p>
-                      {m.value ? (
+                      {m.value && m.href ? (
+                        <a href={m.href} className="text-sm text-brand-700 underline">
+                          {m.value}
+                        </a>
+                      ) : m.value ? (
                         <p className="text-sm text-ink/70">{m.value}</p>
                       ) : (
                         <p className="text-sm text-ink/40">Publishing shortly</p>

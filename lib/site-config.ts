@@ -17,9 +17,10 @@ export const SOCIAL_LINKS: Array<{ label: string; href: string }> = [
   { label: "WhatsApp", href: "#" },
 ];
 
-// Placeholder until the user sends a real address — see About page's [TO CONFIRM] pattern.
+// Phone/WhatsApp still placeholder until the user sends them — see About page's
+// [TO CONFIRM] pattern.
 export const CONTACT = {
-  email: "",
+  email: "odishabizhub@gmail.com",
   phone: "",
   whatsapp: "",
 };
