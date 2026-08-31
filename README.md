@@ -24,10 +24,17 @@ below for where content is being deepened first.
 ## Data provenance
 
 Every policy figure, cap, district list and negative-list entry in `lib/subsidy-data.ts` and
-`api/_shared_data.py` is transcribed from
+(inlined directly, not imported — see note below) `api/eligibility.py` is transcribed from
 [`../Plan/Odisha_MSME_Subsidy_Matrix.xlsx`](../Plan/Odisha_MSME_Subsidy_Matrix.xlsx). Nothing is
-invented. **The two data files must be kept in sync by hand** — if you change a rate or cap in
+invented. **The two data copies must be kept in sync by hand** — if you change a rate or cap in
 one, change it in the other.
+
+`api/eligibility.py` holds its own copy of the policy/district/negative-list data inline,
+rather than importing it from a shared module. Vercel's Python runtime bundles each `api/*.py`
+file as an isolated function, so a sibling-file import (`from _shared_data import ...`) 404s in
+production with `ModuleNotFoundError` even though it works fine under a local interpreter —
+this cost a failed production deploy to discover. Keep new Python API functions self-contained
+for the same reason.
 
 The workbook's own "Verify Before Filing" tab lists 14 open points where its compilers couldn't
 confirm a figure. Several of the highest-priority ones have since been cross-checked against
